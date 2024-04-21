@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="raja" />
+    <meta
+      name="description"
+      content="This page contains all the things i'm larning html"
+    />
+    <link rel="icon" href="icon.png" />
+    <title>My first Web Page</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MY GOALS FOR THE YEAR</h1>
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#learn">learn html</a>
+          </li>
+          <li>
+            <a href="#trip">trip</a>
+          </li>
+          <li>
+            <a href="#contact">contact me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h2>h1</h2>
+        <section>
+          <h3>Topics</h3>
+          <p>Let's do it raja!!:</p>
+          <p><img src="img/learn.jpeg" alt="learning image" /></p>
+          <p>first learn html,css,js.</p>
+          <!--nbsp is nothing but putting spaces-->
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;learn node.js,express.js,sql.</p>
+          <p>learn react js.</p>
+          <p>
+            create
+            <abbr title="SASI INSTITUTE OF TECHNOLOGY AND ENGINEERING"
+              ><a href="https://www.sasi.ac.in/">SITE</a></abbr
+            >
+            online site.
+          </p>
+        </section>
+      </article>
+      <hr />
+      <article id="learn">
+        <h2>h1</h2>
+        <section>
+          <h3>learn part</h3>
+          <ol>
+            <li>Let's do it raja!!:</li>
+
+            <li>
+              <figure>
+                <img src="img/learn.jpeg" alt="learning image" />
+                <figcaption>LEARNING IMAGE</figcaption>
+              </figure>
+            </li>
+            <li>learn os</li>
+            <li>learn cn</li>
+            <li>learn sql</li>
+            <li>revise <em>JAVA</em></li>
+          </ol>
+        </section>
+        <aside>
+          <details>
+            <summary>Guess what i learn today</summary>
+            <p>FULL HTML</p>
+          </details>
+        </aside>
+      </article>
+      <table>
+        <caption>
+          My Daily Schedhule
+        </caption>
+        <thead>
+          <tr>
+            <th>SLOTS</th>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>morning</th>
+            <td>
+              <time datetime="09:00"> 9am-11am</time>
+            </td>
+            <td>write code</td>
+          </tr>
+          <tr>
+            <th>semi-afternoon</th>
+            <td>
+              <time datetime="11:00"> 11m-12am</time>
+            </td>
+            <td>learn stuff</td>
+          </tr>
+          <tr>
+            <th>afternoon</th>
+            <td>
+              <time datetime="12:00"> 12am-1pm</time>
+            </td>
+            <td>lunch</td>
+          </tr>
+          <tr>
+            <th>evening</th>
+            <td><time datetime="5:00">5pm-7pm</time></td>
+            <td>GYM</td>
+          </tr>
+          <tr>
+            <th rowspan="2">nights</th>
+            <td rowspan="2">Free time</td>
+            <td>GTA</td>
+          </tr>
+          <tr>
+            <td>NETFLIX</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">
+              And that's what i do.Jus code,learn,eat,gym,sleep
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <hr />
+      <section id="trip">
+        <h2>Places i want to avoid</h2>
+        <dl>
+          <dt><em>North pole</em></dt>
+          <dd>I hear that is <strong>cold</strong></dd>
+          <dd><img src="img/np.jpeg" alt="North pole pic" loading="lazy" /></dd>
+
+          <dt><em>South pole</em></dt>
+          <dd>i heard that is too <strong>cold</strong></dd>
+          <dd><img src="img/sp.jpeg" alt="southpole pic" /></dd>
+        </dl>
+      </section>
+      <hr />
+      <ul>
+        <li>download an <a href="icon.png" download>HTML5 favicon</a></li>
+        <li>Dial me-&gt;<a href="tel:+91">my phone number</a></li>
+      </ul>
+      <hr />
+      <article id="contact">
+        <h2>contact me</h2>
+        <p>I'd really like to hear me from you</p>
+
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Info:</legend>
+            <p>
+              <label for="firstName">firstname:</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="NAME"
+                autocomplete="on"
+                required
+                autofocus
+              />
+            </p>
+            <p>
+              <label for="lastName">lastname:</label>
+              <input
+                type="text"
+                name="lasttName"
+                id="lastName"
+                placeholder="NAME"
+                autocomplete="on"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="password"
+                required
+              />
+            </p>
+            <p>
+              <label for="phone">phone:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="+91....."
+                pattern="^\+91[1-9][0-9]{9}$"
+                required
+              />
+            </p>
+            <p>
+              <label for="coffee">Favourite coffee:</label>
+              <select name="coffee" id="coffee">
+                <optgroup label="Coffees">
+                  <option value="regular coffee selected">
+                    regluar coffee
+                  </option>
+                  <option value="r coffee">cold coffee</option>
+                </optgroup>
+                <optgroup label="drinks">
+                  <option value="drinks">Beers</option>
+                  <option value="drinks">Whisky</option>
+                </optgroup>
+              </select>
+            </p>
+
+            <!--  <p>
+            <label for="coffee">Favourite coffee:</label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list" />
+            <datalist id="coffee-list">
+              <option value="coffee"></option>
+              <option value="cold coffee"></option>
+              <option value="drinks"></option>
+              <option value="drinks"></option>
+            </datalist>
+          </p> -->
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>What is your fav food?</legend>
+            <p>
+              <input type="radio" name="food" id="tacos" value="tacos" />
+              <label for="tacos">Tacos</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="pizza" value="pizza" />
+              <label for="pizza">Pizza</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="other" value="other" />
+              <label for="other">Others</label>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Do u have PETS?</legend>
+            <input type="checkbox" name="pets" id="yes" value="yes" />
+            <label for="pets">Yes</label>
+            <input type="checkbox" name="pets" id="no" value="no" />
+            <label for="pets">No</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Send me a note</legend>
+            <label for="message">your msg:</label>
+            <br />
+            <textarea
+              name="mesage"
+              id="msg"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </fieldset>
+          <br />
+          <button type="submit">submit</button>
+          <button
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            Post
+          </button>
+          <button type="reset">reset</button>
+        </form>
+      </article>
+    </main>
+    <hr />
+    <!--lt means < symbol and gt is > symbol-->
+    <footer>
+      <p>&lt;&lt;&lt; &copy; Raja &gt;&gt;&gt;</p>
+      <a href="#">Back to top</a>
+    </footer>
+  </body>
+</html>

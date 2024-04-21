@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="RAJA" />
+    <meta
+      name="description"
+      content="This page contains contact details of our bakery"
+    />
+    <link rel="icon" href="mainbake.png" />
+    <title>MUN'S BAKERY</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact us</h1>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="index.html#info">About us</a>
+        </li>
+        <li>
+          <a href="index.html#Menu">Our menu</a>
+        </li>
+        <li>
+          <a href="hours.html">Store Hours</a>
+        </li>
+      </ul>
+
+      <figure>
+        <img src="calling.jpeg" alt="contact image basing on cake" />
+        <figcaption>Available 24/7</figcaption>
+      </figure>
+    </header>
+    <hr />
+    <main>
+      <h2>Our Contact Form</h2>
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Send Us A Message</legend>
+          <p>
+            <label for="username">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="username"
+              placeholder="your name"
+              autocomplete="on"
+              autofocus
+              required
+            />
+          </p>
+
+          <label for="useremail">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="useremail"
+            placeholder="your email"
+            autocomplete="on"
+          />
+          <p>
+            <label for="userphone">Phone:</label>
+            <input
+              type="tel"
+              name="phone"
+              id="userphone"
+              placeholder="99******99"
+              pattern="[1-9]\d{9}"
+            />
+          </p>
+          <p>
+            <label for="message">Your message:</label>
+          </p>
+          <textarea id="message" rows="5"></textarea>
+        </fieldset>
+        <br />
+        <button type="submit">Send</button>
+        <button type="button">Reset</button>
+      </form>
+    </main>
+    <footer>
+      <h2>Our Location</h2>
+      <address>
+        555 Taco Temptation Lane, Suite T Kansas City,MO 9390150518
+      </address>
+      <p>Phone:&nbsp;<a href="tel:+919390150518">9390150518</a></p>
+      <a href="#">Back to Top</a>
+      <hr />
+      <br />
+      Copyright &copy; MB aka MUN'S BAKERY
+    </footer>
+  </body>
+</html>
